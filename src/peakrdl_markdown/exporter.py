@@ -183,12 +183,12 @@ class MarkdownExporter:  # pylint: disable=too-few-public-methods
 
         # Write to the file.
         with open(output_path, "w", encoding="UTF-8") as output:
-            output.write(
-                "<!---\n"
-                "Markdown description for SystemRDL register map.\n\n"
-                f"Don't override. Generated from: {generated_from}\n"
-                "-->\n"
-            )
+            #output.write(
+            #    "<!---\n"
+            #    "Markdown description for SystemRDL register map.\n\n"
+            #    f"Don't override. Generated from: {generated_from}\n"
+            #    "-->\n"
+            #)
             output.write(gen)
 
     def _add_addrmap_regfile_mem(
